@@ -1,6 +1,11 @@
 $env:PYTHONIOENCODING="utf-8"
 
-oh-my-posh init pwsh --config $ENV:USERPROFILE/.thecyberden-babis.omp.json | Invoke-Expression
+if ($ENV:USERPROFILE) {
+  oh-my-posh init pwsh --config $ENV:USERPROFILE/.thecyberden-babis.omp.json | Invoke-Expression
+}
+else {
+  oh-my-posh init pwsh --config ~/.thecyberden-babis.omp.json | Invoke-Expression
+}
 
 Import-Module posh-git
 Import-Module -Name Terminal-Icons
@@ -134,10 +139,10 @@ Function VC1 {
     try     {python3 -m venv .venv}
     catch   {python  -m venv .venv}
 }
-New-Alias -Name vc -Value VC1
+Set-Alias -Name vc -Value VC1
 
-New-Alias -Name ve -Value .venv/scripts/activate.ps1
+Set-Alias -Name ve -Value .venv/scripts/activate.ps1
 
-iex "$(thefuck --alias)"
+Invoke-Expression "$(thefuck --alias)"
 
 #endregion
