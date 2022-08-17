@@ -1,5 +1,11 @@
 # my-powershell-profile
 
+## Location
+
+```powershell
+echo $PROFILE.CurrentUserAllHosts
+```
+
 ## Requirements
 
 - Oh My Posh [[Website](https://ohmyposh.dev/docs/installation/windows)]
