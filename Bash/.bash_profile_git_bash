@@ -1,0 +1,2 @@
+eval $(thefuck --alias)
+eval "$(oh-my-posh init bash --config /mnt/c/Users/<user>/.thecyberden-babis.omp.json)"
