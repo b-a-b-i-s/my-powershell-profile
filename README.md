@@ -1,5 +1,5 @@
 # My profiles
 
 - [Powershell](./Powershell/)
-- [Bash](./bash/)
+- [Bash](./Bash/)
 - [cmd](./cmd/)
