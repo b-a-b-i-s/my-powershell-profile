@@ -50,6 +50,8 @@ Install-Module -Name Terminal-Icons -Repository PSGallery
 
   Generic way of installation (If not working go [here](https://github.com/nvbn/thefuck/wiki/Installation))
 
+  Also need to add Python Scripts folder to the Path
+
 ```powershell
 pip install --user thefuck
 ```
