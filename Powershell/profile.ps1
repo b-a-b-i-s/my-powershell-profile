@@ -13,6 +13,8 @@ Import-Module ZLocation
 Import-Module PSUtil
 Import-Module PSWriteHTML
 
+# To bypass ExecutionPolicy using Administrator pwsh run: Unblock-File -Path $PROFILE.CurrentUserAllHosts
+
 # Invoke-Expression (& {
 #     $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
 #     (zoxide init --hook $hook powershell | Out-String)
